@@ -19,7 +19,7 @@ export default function FormGeneratorPage() {
     try {
       // 🔹 Backend call (Gemini trigger)
       const token = localStorage.getItem("token")
-      const { data } = await axios.post("http://localhost:4000/api/forms/generate", { prompt }, {
+      const { data } = await axios.post("https://ai-form-generator-backend.onrender.com/api/forms/generate", { prompt }, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -39,7 +39,7 @@ export default function FormGeneratorPage() {
       const token = localStorage.getItem("token");
 
       const { data } = await axios.post(
-        `http://localhost:4000/api/forms/${formId}/submit`,
+        `https://ai-form-generator-backend.onrender.com/api/forms/${formId}/submit`,
         formData,
         {
           headers: {

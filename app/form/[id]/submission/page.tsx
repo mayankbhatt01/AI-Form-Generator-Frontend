@@ -17,7 +17,7 @@ export default function SubmissionsPage() {
     try {
       const token = localStorage.getItem("token");
       const { data } = await axios.get(
-        `http://localhost:4000/api/forms/${formId}/submissions`,
+        `https://ai-form-generator-backend.onrender.com/api/forms/${formId}/submissions`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

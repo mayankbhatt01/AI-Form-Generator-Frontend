@@ -16,7 +16,7 @@ export default function SignupForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-     const {data} = await axios.post('http://localhost:4000/api/auth/signup', form )
+     const {data} = await axios.post('https://ai-form-generator-backend.onrender.com/api/auth/signup', form )
        
       router.push("/login"); // signup ke baad login page pe bhej dega
     } catch (err: any) {

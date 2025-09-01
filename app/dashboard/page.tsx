@@ -16,7 +16,7 @@ export default function DashboardPage() {
       try {
         setLoading(true);
         const token = localStorage.getItem("token");
-        const { data } = await axios.get('http://localhost:4000/api/forms/my', {
+        const { data } = await axios.get('https://ai-form-generator-backend.onrender.com/api/forms/my', {
           headers: {
             Authorization: `Bearer ${token}`
           }

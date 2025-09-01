@@ -16,7 +16,7 @@ export default function DynamicFormPage() {
   const getFormData = async () => {
     const token = localStorage.getItem("token");
     const { data } = await axios.get(
-      `http://localhost:4000/api/forms/${formId}`,
+      `https://ai-form-generator-backend.onrender.com/api/forms/${formId}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -44,7 +44,7 @@ export default function DynamicFormPage() {
       const token = localStorage.getItem("token");
 
       const { data } = await axios.post(
-        `http://localhost:4000/api/forms/${formId}/submit`,
+        `https://ai-form-generator-backend.onrender.com/api/forms/${formId}/submit`,
         formData,
         {
           headers: {
