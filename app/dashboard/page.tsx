@@ -47,7 +47,7 @@ export default function DashboardPage() {
           Your Dashboard
         </h1>
         <button
-          onClick={() => router.push(`/formGenerater`)}
+          onClick={() => router.push(`/formGenerator`)}
           className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
         >
           Create Form
