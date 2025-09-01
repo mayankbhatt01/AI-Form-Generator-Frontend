@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# AI Form Generator - Frontend
 
-First, run the development server:
+This is the frontend for the **AI Form Generator** project. It is built using **Next.js**, **React**, **Tailwind CSS**, and **Framer Motion**.  
+It communicates with the backend APIs for authentication, form creation, and submission.
 
+---
+
+## 🚀 Project Setup
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/mayankbhatt01/AI-Form-Generator-Frontend.git
+cd AI-Form-Generator-Frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run the Project in Development
+```bash
+npm run dev
+```
+This will start the development server on [http://localhost:3000](http://localhost:3000).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Build the Project
+```bash
+npm run build
+```
 
-## Learn More
+### 5. Run in Production
+```bash
+npm start
+```
+The build will be generated inside the `.next/` folder.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Project Structure
+```
+aiform/
+ ├── app/           # Next.js app folder (pages/components if using pages)
+ ├── components/    # Reusable React components
+ ├── public/        # Static assets
+ ├── styles/        # Tailwind CSS styles
+ └── package.json
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 Frontend & Backend Links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Frontend GitHub URL:** [AI-Form-Generator-Frontend](https://github.com/mayankbhatt01/AI-Form-Generator-Frontend)  
+- **Frontend Deployed URL:** [https://ai-form-generator-frontend.vercel.app/](https://ai-form-generator-frontend.vercel.app/)  
+- **Backend GitHub URL:** [AI-Form-Generator-Backend](https://github.com/mayankbhatt01/AI-Form-Generator-Backend)  
+- **Backend Deployed URL:** [https://ai-form-generator-backend.onrender.com/](https://ai-form-generator-backend.onrender.com/)  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⚠️ Important Note: The backend is deployed on Render, so the first request may take 2-3 minutes to respond (cold start). After that, performance will be smooth.
+
+---
+
+## 🛠️ Tech Stack
+
+- Next.js + React
+- Tailwind CSS
+- Framer Motion
+- Axios (for API requests)
+- Lucide React (icons)
+- TypeScript
